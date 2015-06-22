@@ -1,5 +1,6 @@
 // Handle Cortana activation adding the event listener before DOM Content Loaded
 // parse out the command type and call the respective game APIs
+
 if (typeof Windows !== 'undefined') {
   console.log("Windows namespace is available");
   // Subscribe to the Windows Activation Event
