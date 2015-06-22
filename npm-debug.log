@@ -1,0 +1,289 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files (x86)\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'generator-appx' ]
+2 info using npm@2.10.1
+3 info using node@v0.12.4
+4 verbose install initial load of C:\Users\khill\AppData\Roaming\npm\package.json
+5 verbose readDependencies loading dependencies from C:\Users\khill\AppData\Roaming\npm\package.json
+6 silly cache add args [ 'generator-appx', null ]
+7 verbose cache add spec generator-appx
+8 silly cache add parsed spec { raw: 'generator-appx',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'generator-appx',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed generator-appx@*
+10 verbose addNamed "*" is a valid semver range for generator-appx
+11 silly addNameRange { name: 'generator-appx', range: '*', hasData: false }
+12 silly mapToRegistry name generator-appx
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/generator-appx
+16 verbose addNameRange registry:https://registry.npmjs.org/generator-appx not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/generator-appx
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 2:38:33 PM
+20 verbose request id a419cce34b09987e
+21 verbose etag "4Z64GLDQXRLZ9M8ZO9F4DTUG"
+22 http request GET https://registry.npmjs.org/generator-appx
+23 http 200 https://registry.npmjs.org/generator-appx
+24 silly get cb [ 200,
+24 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 silly get     etag: '"2VVV6BWXER8KHXNH5Z1Q4J21E"',
+24 silly get     'content-type': 'application/json',
+24 silly get     'cache-control': 'max-age=60',
+24 silly get     'content-length': '5650',
+24 silly get     'accept-ranges': 'bytes',
+24 silly get     date: 'Tue, 16 Jun 2015 21:38:34 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     age: '0',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-sjc3125-SJC',
+24 silly get     'x-cache': 'MISS',
+24 silly get     'x-cache-hits': '0',
+24 silly get     'x-timer': 'S1434490713.924993,VS0,VE89',
+24 silly get     vary: 'Accept' } ]
+25 verbose get saving generator-appx to C:\Users\khill\AppData\Roaming\npm-cache\registry.npmjs.org\generator-appx\.cache.json
+26 silly addNameRange number 2 { name: 'generator-appx', range: '*', hasData: true }
+27 silly addNameRange versions [ 'generator-appx',
+27 silly addNameRange   [ '0.0.1', '0.0.2', '0.0.3', '0.0.4', '0.0.5' ] ]
+28 silly addNamed generator-appx@0.0.5
+29 verbose addNamed "0.0.5" is a plain semver version for generator-appx
+30 silly mapToRegistry name generator-appx
+31 silly mapToRegistry using default registry
+32 silly mapToRegistry registry https://registry.npmjs.org/
+33 silly mapToRegistry uri https://registry.npmjs.org/generator-appx
+34 verbose addRemoteTarball https://registry.npmjs.org/generator-appx/-/generator-appx-0.0.5.tgz not in flight; adding
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/generator-appx/-/generator-appx-0.0.5.tgz',
+35 verbose addRemoteTarball   '72e8b25f1c2e2fc067db9193475c32abdf517eaa' ]
+36 info retry fetch attempt 1 at 2:38:34 PM
+37 info attempt registry request try #1 at 2:38:34 PM
+38 http fetch GET https://registry.npmjs.org/generator-appx/-/generator-appx-0.0.5.tgz
+39 http fetch 200 https://registry.npmjs.org/generator-appx/-/generator-appx-0.0.5.tgz
+40 silly fetchAndShaCheck shasum 72e8b25f1c2e2fc067db9193475c32abdf517eaa
+41 verbose addTmpTarball C:\Users\khill\AppData\Local\Temp\npm-2220-31ea2745\registry.npmjs.org\generator-appx\-\generator-appx-0.0.5.tgz not in flight; adding
+42 verbose addTmpTarball already have metadata; skipping unpack for generator-appx@0.0.5
+43 silly cache afterAdd generator-appx@0.0.5
+44 verbose afterAdd C:\Users\khill\AppData\Roaming\npm-cache\generator-appx\0.0.5\package\package.json not in flight; writing
+45 verbose afterAdd C:\Users\khill\AppData\Roaming\npm-cache\generator-appx\0.0.5\package\package.json written
+46 silly install resolved [ { name: 'generator-appx',
+46 silly install resolved     version: '0.0.5',
+46 silly install resolved     description: 'Windows 10 App Build System',
+46 silly install resolved     files: [ 'generators' ],
+46 silly install resolved     keywords: [ 'yeoman-generator' ],
+46 silly install resolved     repository:
+46 silly install resolved      { type: 'git',
+46 silly install resolved        url: 'git://github.com/alxlu/generator-appx.git' },
+46 silly install resolved     dependencies:
+46 silly install resolved      { 'gulp-appx': 'git://github.com/alxlu/gulp-appx.git',
+46 silly install resolved        'yeoman-generator': '^0.20.1' },
+46 silly install resolved     gitHead: '34d362a917798cde013a5630c89754fc5295bf46',
+46 silly install resolved     bugs: { url: 'https://github.com/alxlu/generator-appx/issues' },
+46 silly install resolved     homepage: 'https://github.com/alxlu/generator-appx#readme',
+46 silly install resolved     _id: 'generator-appx@0.0.5',
+46 silly install resolved     scripts: {},
+46 silly install resolved     _shasum: '72e8b25f1c2e2fc067db9193475c32abdf517eaa',
+46 silly install resolved     _from: 'generator-appx@*',
+46 silly install resolved     _npmVersion: '2.9.1',
+46 silly install resolved     _nodeVersion: '0.12.3',
+46 silly install resolved     _npmUser: { name: 'alxlu', email: 'alxlu@users.noreply.github.com' },
+46 silly install resolved     dist:
+46 silly install resolved      { shasum: '72e8b25f1c2e2fc067db9193475c32abdf517eaa',
+46 silly install resolved        tarball: 'http://registry.npmjs.org/generator-appx/-/generator-appx-0.0.5.tgz' },
+46 silly install resolved     maintainers: [ [Object] ],
+46 silly install resolved     directories: {},
+46 silly install resolved     _resolved: 'https://registry.npmjs.org/generator-appx/-/generator-appx-0.0.5.tgz' } ]
+47 info install generator-appx@0.0.5 into C:\Users\khill\AppData\Roaming\npm
+48 info installOne generator-appx@0.0.5
+49 verbose installOne of generator-appx to C:\Users\khill\AppData\Roaming\npm not in flight; installing
+50 verbose lock using C:\Users\khill\AppData\Roaming\npm-cache\_locks\generator-appx-0f8916f85c6b0bbf.lock for C:\Users\khill\AppData\Roaming\npm\node_modules\generator-appx
+51 silly install write writing generator-appx 0.0.5 to C:\Users\khill\AppData\Roaming\npm\node_modules\generator-appx
+52 verbose unbuild node_modules\generator-appx
+53 silly gentlyRm C:\Users\khill\AppData\Roaming\npm\node_modules\generator-appx is being purged from base C:\Users\khill\AppData\Roaming\npm
+54 verbose gentlyRm don't care about contents; nuking C:\Users\khill\AppData\Roaming\npm\node_modules\generator-appx
+55 verbose tar unpack C:\Users\khill\AppData\Roaming\npm-cache\generator-appx\0.0.5\package.tgz
+56 verbose tar unpacking to C:\Users\khill\AppData\Roaming\npm\node_modules\generator-appx
+57 silly gentlyRm C:\Users\khill\AppData\Roaming\npm\node_modules\generator-appx is being purged
+58 verbose gentlyRm don't care about contents; nuking C:\Users\khill\AppData\Roaming\npm\node_modules\generator-appx
+59 silly gunzTarPerm modes [ '777', '666' ]
+60 silly gunzTarPerm extractEntry package.json
+61 silly gunzTarPerm extractEntry README.md
+62 silly gunzTarPerm extractEntry generators/app/index.js
+63 verbose write writing to C:\Users\khill\AppData\Roaming\npm\node_modules\generator-appx\package.json
+64 info preinstall generator-appx@0.0.5
+65 verbose readDependencies loading dependencies from C:\Users\khill\AppData\Roaming\npm\node_modules\generator-appx\package.json
+66 silly prepareForInstallMany adding gulp-appx@git://github.com/alxlu/gulp-appx.git from generator-appx dependencies
+67 silly prepareForInstallMany adding yeoman-generator@^0.20.1 from generator-appx dependencies
+68 verbose readDependencies loading dependencies from C:\Users\khill\AppData\Roaming\npm\node_modules\generator-appx\package.json
+69 silly cache add args [ 'yeoman-generator@^0.20.1', null ]
+70 verbose cache add spec yeoman-generator@^0.20.1
+71 silly cache add parsed spec { raw: 'yeoman-generator@^0.20.1',
+71 silly cache add   scope: null,
+71 silly cache add   name: 'yeoman-generator',
+71 silly cache add   rawSpec: '^0.20.1',
+71 silly cache add   spec: '>=0.20.1 <0.21.0',
+71 silly cache add   type: 'range' }
+72 silly addNamed yeoman-generator@>=0.20.1 <0.21.0
+73 verbose addNamed ">=0.20.1 <0.21.0" is a valid semver range for yeoman-generator
+74 silly addNameRange { name: 'yeoman-generator',
+74 silly addNameRange   range: '>=0.20.1 <0.21.0',
+74 silly addNameRange   hasData: false }
+75 silly mapToRegistry name yeoman-generator
+76 silly mapToRegistry using default registry
+77 silly mapToRegistry registry https://registry.npmjs.org/
+78 silly mapToRegistry uri https://registry.npmjs.org/yeoman-generator
+79 verbose addNameRange registry:https://registry.npmjs.org/yeoman-generator not in flight; fetching
+80 silly cache add args [ 'gulp-appx@git://github.com/alxlu/gulp-appx.git', null ]
+81 verbose cache add spec gulp-appx@git://github.com/alxlu/gulp-appx.git
+82 silly cache add parsed spec { raw: 'gulp-appx@git://github.com/alxlu/gulp-appx.git',
+82 silly cache add   scope: null,
+82 silly cache add   name: 'gulp-appx',
+82 silly cache add   rawSpec: 'git://github.com/alxlu/gulp-appx.git',
+82 silly cache add   spec: 'git://github.com/alxlu/gulp-appx.git',
+82 silly cache add   type: 'hosted',
+82 silly cache add   hosted:
+82 silly cache add    { type: 'github',
+82 silly cache add      ssh: 'git@github.com:alxlu/gulp-appx.git',
+82 silly cache add      sshUrl: 'git+ssh://git@github.com/alxlu/gulp-appx.git',
+82 silly cache add      httpsUrl: 'git+https://github.com/alxlu/gulp-appx.git',
+82 silly cache add      gitUrl: 'git://github.com/alxlu/gulp-appx.git',
+82 silly cache add      shortcut: 'github:alxlu/gulp-appx',
+82 silly cache add      directUrl: 'https://raw.githubusercontent.com/alxlu/gulp-appx/master/package.json' } }
+83 verbose addRemoteGit caching git://github.com/alxlu/gulp-appx.git
+84 verbose addRemoteGit git://github.com/alxlu/gulp-appx.git is a repository hosted by github
+85 silly tryClone cloning git://github.com/alxlu/gulp-appx.git via git://github.com/alxlu/gulp-appx.git
+86 verbose tryClone git-github-com-alxlu-gulp-appx-git-a56cf023 not in flight; caching
+87 verbose request uri https://registry.npmjs.org/yeoman-generator
+88 verbose request no auth needed
+89 info attempt registry request try #1 at 2:38:34 PM
+90 verbose etag "3JCPK9F8RX9B7PVW90IVZR3TZ"
+91 http request GET https://registry.npmjs.org/yeoman-generator
+92 warn addRemoteGit Error: not found: git
+92 warn addRemoteGit     at F (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\which\which.js:72:28)
+92 warn addRemoteGit     at E (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\which\which.js:75:29)
+92 warn addRemoteGit     at C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\which\which.js:83:16
+92 warn addRemoteGit     at FSReqWrap.oncomplete (fs.js:95:15)
+92 warn addRemoteGit  git://github.com/alxlu/gulp-appx.git resetting remote C:\Users\khill\AppData\Roaming\npm-cache\_git-remotes\git-github-com-alxlu-gulp-appx-git-a56cf023 because of error: { [Error: not found: git] code: 'ENOGIT' }
+93 info resetRemote resetting C:\Users\khill\AppData\Roaming\npm-cache\_git-remotes\git-github-com-alxlu-gulp-appx-git-a56cf023 for git://github.com/alxlu/gulp-appx.git
+94 silly gentlyRm C:\Users\khill\AppData\Roaming\npm-cache\_git-remotes\git-github-com-alxlu-gulp-appx-git-a56cf023 is being purged
+95 verbose gentlyRm don't care about contents; nuking C:\Users\khill\AppData\Roaming\npm-cache\_git-remotes\git-github-com-alxlu-gulp-appx-git-a56cf023
+96 silly vacuum-fs purging C:\Users\khill\AppData\Roaming\npm-cache\_git-remotes\git-github-com-alxlu-gulp-appx-git-a56cf023
+97 silly vacuum-fs quitting because other entries in C:\Users\khill\AppData\Roaming\npm-cache\_git-remotes
+98 error git clone --template=C:\Users\khill\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git://github.com/alxlu/gulp-appx.git C:\Users\khill\AppData\Roaming\npm-cache\_git-remotes\git-github-com-alxlu-gulp-appx-git-a56cf023: undefined
+98 error git clone --template=C:\Users\khill\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git://github.com/alxlu/gulp-appx.git C:\Users\khill\AppData\Roaming\npm-cache\_git-remotes\git-github-com-alxlu-gulp-appx-git-a56cf023: undefined
+99 http 304 https://registry.npmjs.org/yeoman-generator
+100 silly get cb [ 304,
+100 silly get   { date: 'Tue, 16 Jun 2015 21:38:34 GMT',
+100 silly get     via: '1.1 varnish',
+100 silly get     'cache-control': 'max-age=60',
+100 silly get     etag: '"3JCPK9F8RX9B7PVW90IVZR3TZ"',
+100 silly get     age: '0',
+100 silly get     connection: 'keep-alive',
+100 silly get     'x-served-by': 'cache-sjc3132-SJC',
+100 silly get     'x-cache': 'HIT',
+100 silly get     'x-cache-hits': '1',
+100 silly get     'x-timer': 'S1434490714.555433,VS0,VE86',
+100 silly get     vary: 'Accept' } ]
+101 verbose etag https://registry.npmjs.org/yeoman-generator from cache
+102 verbose get saving yeoman-generator to C:\Users\khill\AppData\Roaming\npm-cache\registry.npmjs.org\yeoman-generator\.cache.json
+103 silly addNameRange number 2 { name: 'yeoman-generator',
+103 silly addNameRange   range: '>=0.20.1 <0.21.0',
+103 silly addNameRange   hasData: true }
+104 silly addNameRange versions [ 'yeoman-generator',
+104 silly addNameRange   [ '0.10.0',
+104 silly addNameRange     '0.10.1',
+104 silly addNameRange     '0.10.2',
+104 silly addNameRange     '0.10.3',
+104 silly addNameRange     '0.10.4',
+104 silly addNameRange     '0.10.5',
+104 silly addNameRange     '0.11.0',
+104 silly addNameRange     '0.11.1',
+104 silly addNameRange     '0.11.2',
+104 silly addNameRange     '0.11.3',
+104 silly addNameRange     '0.11.4',
+104 silly addNameRange     '0.12.0',
+104 silly addNameRange     '0.12.1',
+104 silly addNameRange     '0.12.2',
+104 silly addNameRange     '0.12.3',
+104 silly addNameRange     '0.13.0',
+104 silly addNameRange     '0.13.1',
+104 silly addNameRange     '0.13.2',
+104 silly addNameRange     '0.13.3',
+104 silly addNameRange     '0.13.4',
+104 silly addNameRange     '0.14.0-rc.1',
+104 silly addNameRange     '0.14.0-rc.2',
+104 silly addNameRange     '0.14.0',
+104 silly addNameRange     '0.14.1',
+104 silly addNameRange     '0.14.2',
+104 silly addNameRange     '0.15.0-pre.1',
+104 silly addNameRange     '0.15.0-pre.2',
+104 silly addNameRange     '0.15.0-pre.3',
+104 silly addNameRange     '0.15.0',
+104 silly addNameRange     '0.16.0',
+104 silly addNameRange     '0.17.0-pre.1',
+104 silly addNameRange     '0.17.0-pre.2',
+104 silly addNameRange     '0.17.0-pre.3',
+104 silly addNameRange     '0.17.0-pre.4',
+104 silly addNameRange     '0.17.0',
+104 silly addNameRange     '0.17.1',
+104 silly addNameRange     '0.17.2',
+104 silly addNameRange     '0.17.3',
+104 silly addNameRange     '0.17.4',
+104 silly addNameRange     '0.17.5',
+104 silly addNameRange     '0.17.6',
+104 silly addNameRange     '0.17.7',
+104 silly addNameRange     '0.18.0-pre.1',
+104 silly addNameRange     '0.18.0-pre.2',
+104 silly addNameRange     '0.18.0-pre.3',
+104 silly addNameRange     '0.18.0',
+104 silly addNameRange     '0.18.1',
+104 silly addNameRange     '0.18.2',
+104 silly addNameRange     '0.18.3',
+104 silly addNameRange     '0.18.4',
+104 silly addNameRange     '0.18.5',
+104 silly addNameRange     '0.18.6',
+104 silly addNameRange     '0.18.7',
+104 silly addNameRange     '0.18.8',
+104 silly addNameRange     '0.18.9',
+104 silly addNameRange     '0.18.10',
+104 silly addNameRange     '0.19.0',
+104 silly addNameRange     '0.19.1',
+104 silly addNameRange     '0.19.2',
+104 silly addNameRange     '0.20.0',
+104 silly addNameRange     '0.20.1' ] ]
+105 silly addNamed yeoman-generator@0.20.1
+106 verbose addNamed "0.20.1" is a plain semver version for yeoman-generator
+107 silly cache afterAdd yeoman-generator@0.20.1
+108 verbose afterAdd C:\Users\khill\AppData\Roaming\npm-cache\yeoman-generator\0.20.1\package\package.json not in flight; writing
+109 verbose afterAdd C:\Users\khill\AppData\Roaming\npm-cache\yeoman-generator\0.20.1\package\package.json written
+110 verbose about to build C:\Users\khill\AppData\Roaming\npm\node_modules\generator-appx
+111 verbose unlock done using C:\Users\khill\AppData\Roaming\npm-cache\_locks\generator-appx-0f8916f85c6b0bbf.lock for C:\Users\khill\AppData\Roaming\npm\node_modules\generator-appx
+112 verbose stack Error: not found: git
+112 verbose stack     at F (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\which\which.js:72:28)
+112 verbose stack     at E (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\which\which.js:75:29)
+112 verbose stack     at C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\which\which.js:83:16
+112 verbose stack     at FSReqWrap.oncomplete (fs.js:95:15)
+113 verbose cwd c:\Users\khill\Documents\GitHub\ContosoVideo
+114 error Windows_NT 6.3.9600
+115 error argv "C:\\Program Files (x86)\\nodejs\\\\node.exe" "C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "generator-appx"
+116 error node v0.12.4
+117 error npm  v2.10.1
+118 error code ENOGIT
+119 error not found: git
+120 error Failed using git.
+120 error This is most likely not a problem with npm itself.
+120 error Please check if you have git installed and in your PATH.
+121 verbose exit [ 1, true ]
+122 verbose unbuild node_modules\generator-appx
+123 info preuninstall generator-appx@0.0.5
+124 info uninstall generator-appx@0.0.5
+125 verbose unbuild rmStuff generator-appx@0.0.5 from C:\Users\khill\AppData\Roaming\npm\node_modules
+126 info postuninstall generator-appx@0.0.5
+127 silly gentlyRm C:\Users\khill\AppData\Roaming\npm\node_modules\generator-appx is being purged from base C:\Users\khill\AppData\Roaming\npm
+128 verbose gentlyRm don't care about contents; nuking C:\Users\khill\AppData\Roaming\npm\node_modules\generator-appx
+129 silly vacuum-fs purging C:\Users\khill\AppData\Roaming\npm\node_modules\generator-appx
+130 silly vacuum-fs quitting because other entries in C:\Users\khill\AppData\Roaming\npm\node_modules

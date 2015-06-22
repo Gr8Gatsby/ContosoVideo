@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PlayReady with EME 2013 API built-in in IE11</title>
+        <script src="eme2013.js"></script>
+    </head>
+    <body>
+        <script>
+            function init() {
+                 var video = document.getElementById("video");
+                 if (!video.msKeys) {
+                    var keys = new MSMediaKeys("com.microsoft.playready");
+                    video.msSetMediaKeys(keys);
+                }
+            }
+        </script>
+        <h1>PlayReady with EME 2013 API built-in in IE11</h1>
+        <p>
+            <!--  NO ENC
+            http://emepolyfill.streaming.mediaservices.windows.net/2aef66a8-cb55-481f-b9f6-26c4d4bc42c7/starwars.ism/Manifest(format=mpd-time-csf)
+            ENC
+            http://emepolyfill.streaming.mediaservices.windows.net/94909512-5cb4-4277-9120-f080d8618de8/starwars.ism/Manifest(format=mpd-time-csf)
+            -->
+             <video src="" controls autoplay></video>
+
+
+        </p>
+    </body>
+</html>

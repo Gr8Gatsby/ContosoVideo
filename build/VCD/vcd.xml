@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
+  <CommandSet xml:lang="en-us" Name="ContosoVideo">
+    <CommandPrefix>Contoso Video</CommandPrefix>
+    <Example>Contoso video play elephants</Example>
+    <Command Name="play">
+      <Example>play {message} using contoso video</Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase">please play {streamSubject}</ListenFor>
+      <Feedback>playing {streamSubject} with Stream Demo</Feedback>
+      <Navigate Target="/playStream.htm"/>
+    </Command>
+    <PhraseTopic Label="streamSubject" Scenario="Dictation"></PhraseTopic>
+  </CommandSet>
+</VoiceCommands>
