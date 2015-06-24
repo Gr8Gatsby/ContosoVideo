@@ -1,14 +1,26 @@
+/*
+    This function expects two hexStrings and relies on hexStrToRGBA to convert
+    to a JSON object that represents RGBA for the underlying Windows API to 
+    understand.
+
+    Examples of valid values: 
+    setAppBarColors('#FFFFFF','#000000');
+    setAppBarColors('#FFF','#000');
+    setAppBarColors('FFFFFF','000000');
+    setAppBarColors('FFF','000');
+
+*/
+
 function setAppBarColors(brandColorHex, brandColorInactiveHex) {
+   // Detect if the Windows namespace exists in the global object
    if (typeof Windows !== 'undefined') {
         var brandColor = hexStrToRGBA(brandColorHex);
-        var brandColorInactive = hexStrToRGBA(brandColorInactiveHex); 
-
+        var brandColorInactive = hexStrToRGBA(brandColorInactiveHex);
+        // Get a reference to the App Title Bar
         var appTitleBar = Windows.UI.ViewManagement.ApplicationView.getForCurrentView().titleBar;
-
-        //var brandColor = { r: 0x00, g: 0x3B, b: 0x53, a: 0x53 };
-        //var brandColorInactive = { r: 0xE6, g: 0xE6, b: 0xE6, a: 0xFF };
-        var black = { r: 0, g: 0, b: 0, a: 0xFF };
-        var white = { r: 0xFF, g: 0xFF, b: 0xFF, a: 0xFF };
+        
+        var black = hexStrToRGBA('#000');
+        var white = hexStrToRGBA('#FFF');
 
         appTitleBar.foregroundColor = white;
         appTitleBar.backgroundColor = brandColor;
@@ -53,7 +65,7 @@ function hexStrToRGBA(hexStr){
     // Alpha
     colorObject.r = parseInt(hexStr.slice(0, 2),16);
     colorObject.g = parseInt(hexStr.slice(2, 4),16);
-    colorObject.b = parseInt(hexStr.slice(4, 6),16 );
+    colorObject.b = parseInt(hexStr.slice(4, 6),16);
     colorObject.a = parseInt(hexStr.slice(6, 8),16);
   } else if (hexStr.length === 3) {
     // Shorthand hex color
@@ -68,3 +80,10 @@ function hexStrToRGBA(hexStr){
   }
   return colorObject;
 }
+
+// Initialize when the Window loads
+addEventListener('load', function(){
+  var brandColor = '#16A085';
+  var brandColorInactive = '#ECF0F1';
+  setAppBarColors(brandColor,brandColorInactive);
+});

@@ -1,7 +1,8 @@
 // Handle Cortana activation adding the event listener before DOM Content Loaded
 // parse out the command type and call the respective game APIs
+
 if (typeof Windows !== 'undefined') {
-  console.log("Windows exists!");
+  console.log("Windows namespace is available");
   // Subscribe to the Windows Activation Event
   Windows.UI.WebUI.WebUIApplication.addEventListener("activated", function (args) {
     var activation = Windows.ApplicationModel.Activation;
@@ -13,7 +14,6 @@ if (typeof Windows !== 'undefined') {
 
       // Determine the command type {play} defined in vcd
       if (speechRecognitionResult.rulePath[0] === "play") {
-
         // Determine the stream name specified
         if (textSpoken.includes('elephants') || textSpoken.includes('Elephants')) {
           // Movie selected is Elephants Dream
@@ -34,4 +34,6 @@ if (typeof Windows !== 'undefined') {
       }
     }
   });
+} else {
+  console.log("Windows namespace is unavaiable");
 }
